@@ -101,11 +101,14 @@ internal class Line
         SetPoints(x1, y1, x2, y2);
     }
 
-    public void Compare(Line line)
+    // Compares 2 lines and return 0 if equal, 1 if lesser, 2 if greater than line
+    public int Compare(Line line)
     {
         if (this.length == line.length)
-            Console.WriteLine("The lines are of equal length");
+            return 0;
+        else if (this.length < line.length)
+            return 1;
         else
-            Console.WriteLine("The lines are of different lengths");
+            return 2;
     }
 }

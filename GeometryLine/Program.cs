@@ -2,15 +2,35 @@
 
 Console.Title = "Line Comparison App";
 Console.WriteLine("----------------------Geometry Line Comparison App----------------------");
+
+// Create 2 Line objects
 Line line1 = new Line();
 Line Line2 = new Line();
+
+// Input the points for each line
 Console.WriteLine("Enter line 1 details: ");
 line1.GetPointsFromUser();
 Console.WriteLine("Enter line 2 details: ");
 Line2.GetPointsFromUser();
+
+// Display the info of each line
 Console.WriteLine("\nLine 1: ");
 line1.Describe();
 Console.WriteLine("Line 2: ");
 Line2.Describe();
-line1.Compare(Line2);
+
+// Compare the line lengths and display result
+int result = line1.Compare(Line2);
+switch (result)
+{
+    case 0: Console.WriteLine("The lines are equal in length");
+        break;
+    case 1: Console.WriteLine("Line 1 length is lesser than line 2");
+        break;
+    case 2: Console.WriteLine("Line 1 length is greater than line 2");
+        break;
+    default: Console.WriteLine("Error!!");
+        break;
+}
+
 Console.ReadKey();
