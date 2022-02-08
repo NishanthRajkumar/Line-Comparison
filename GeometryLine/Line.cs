@@ -59,12 +59,6 @@ internal class Line
         length = Math.Sqrt(Math.Pow(xDifference, 2) + Math.Pow(yDifference, 2));
     }
 
-    /*// Get length
-    public double Length()
-    {
-        return length;
-    }*/
-
     // Displays the info of the line
     public void Describe()
     {
