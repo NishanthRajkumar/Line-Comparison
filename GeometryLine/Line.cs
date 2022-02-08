@@ -9,6 +9,13 @@ namespace GeometryLine;
 
 internal class Line
 {
+    // Declared length variable that stores the length of the line
+    private double length;
+
+    // Declared 2 Point objects for the end points of a line
+    private Point point1 = new Point();
+    private Point point2 = new Point();
+
     // Structure to describe a geometry point
     struct Point
     {
@@ -30,12 +37,6 @@ internal class Line
         }
     }
 
-    // Declared 2 Point objects for the end points of a line
-    private Point point1 = new Point();
-    private Point point2 = new Point();
-
-    // Declared length variable that stores the length of the line
-    private double length;
 
     // Default constructor
     public Line()
