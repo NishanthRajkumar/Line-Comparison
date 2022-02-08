@@ -59,6 +59,12 @@ internal class Line
         length = Math.Sqrt(Math.Pow(xDifference, 2) + Math.Pow(yDifference, 2));
     }
 
+    /*// Get length
+    public double Length()
+    {
+        return length;
+    }*/
+
     // Displays the info of the line
     public void Describe()
     {
@@ -93,5 +99,13 @@ internal class Line
         Console.Write("y: ");
         y2 = Convert.ToInt32(Console.ReadLine());
         SetPoints(x1, y1, x2, y2);
+    }
+
+    public void Compare(Line line)
+    {
+        if (this.length == line.length)
+            Console.WriteLine("The lines are of equal length");
+        else
+            Console.WriteLine("The lines are of different lengths");
     }
 }

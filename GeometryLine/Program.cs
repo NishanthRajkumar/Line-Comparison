@@ -12,4 +12,5 @@ Console.WriteLine("\nLine 1: ");
 line1.Describe();
 Console.WriteLine("Line 2: ");
 Line2.Describe();
+line1.Compare(Line2);
 Console.ReadKey();
