@@ -13,8 +13,8 @@ internal class Line
     private double length;
 
     // Declared 2 Point objects for the end points of a line
-    private Point point1 = new Point();
-    private Point point2 = new Point();
+    private Point point1;
+    private Point point2;
 
     // Structure to describe a geometry point
     struct Point
