@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GeometryLine;
+﻿namespace GeometryLine;
 
 
 internal class Line
@@ -105,5 +99,11 @@ internal class Line
             return 1;
         else
             return 2;
+    }
+
+    // Compares 2 lines and return true if equal, else false
+    public bool Equals(Line line)
+    {
+        return this.length == line.length;
     }
 }
